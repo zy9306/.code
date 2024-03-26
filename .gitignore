@@ -1,0 +1,7 @@
+*
+!.gitignore
+!keybindings.json
+!settings.json
+!extensions.txt
+!snippets/*
+.DS_Store
