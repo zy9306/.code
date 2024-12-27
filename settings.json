@@ -34,23 +34,18 @@
     "black-formatter.args": [
         "--line-length=120"
     ],
-    "emacs-mcx.strictEmacsMove": true,
-    "emacs-mcx.useMetaPrefixMacCmd": true,
-    "emacs-mcx.useMetaPrefixEscape": true,
-    "emacs-mcx.cursorMoveOnFindWidget": true,
-    "emacs-mcx.emacsLikeTab": true,
-    "emacs-mcx.enableOverridingTypeCommand": true,
-    "emacs-mcx.killRingMax": 500,
-    "emacs-mcx.killWholeLine": true,
     "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.10/bin/python",
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "git.openRepositoryInParentFolders": "never",
-    "gitlens.currentLine.enabled": false,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.hovers.enabled": false,
-    "gitlens.statusBar.enabled": false,
-    "alt-editor.binary": "emacsclient",
-    "alt-editor.args": "-n +{line}:{column} {filename}",
+    "editor.fontFamily": "Iosevka, Menlo, Monaco, 'Courier New', monospace",
+    "vscode-neovim.compositeKeys": {
+        "jj": {
+            "command": "vscode-neovim.escape",
+        },
+    },
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
 }
