@@ -1,0 +1,250 @@
+[
+    {
+        "key": "ctrl+;",
+        "command": "emacs-mcx.setMarkCommand",
+    },
+    {
+        "key": "ctrl+x ctrl+;",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+;",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+4 cmd+.",
+        "command": "editor.action.revealDefinitionAside",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+.",
+        "command": "editor.action.revealDefinition",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.navigateBack",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+.",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    {
+        "key": "ctrl+shift+.",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+    {
+        "key": "shift+cmd+-",
+        "command": "redo",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.findInFiles",
+    },
+    {
+        "key": "ctrl+shift+,",
+        "command": "workbench.action.navigateForward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.navigateBack",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "editor.action.smartSelect.expand",
+    },
+    {
+        "key": "ctrl+-",
+        "command": "editor.action.smartSelect.shrink",
+    },
+    {
+        "key": "f8",
+        "command": "workbench.files.action.showActiveFileInExplorer",
+    },
+    {
+        "key": "f9",
+        "command": "workbench.action.toggleSidebarVisibility",
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+cmd+enter",
+        "command": "editor.foldAll",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "editor.toggleFold",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "cursorLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "cursorRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+c ctrl+j",
+        "command": "workbench.action.gotoSymbol",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl-x ctrl-s",
+        "command": "searchEditorApplyChanges.apply",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "ctrl+c ctrl+e",
+        "command": "alt-editor.openFile",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+s",
+        "command": "-workbench.action.files.save"
+    },
+    {
+        "key": "cmd+s",
+        "command": "workbench.action.experimental.quickTextSearch"
+    },
+    // ********** BUFFER RELATED START **********
+    {
+        "key": "cmd+w b",
+        "command": "copyFilePath",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+    {
+        "key": "ctrl+x ctrl+f",
+        "command": "file-browser.open",
+    },
+    // ********** BUFFER RELATED END **********
+    // ********** GIT RELATED START **********
+    {
+        "key": "ctrl+x v u",
+        "command": "git.revertSelectedRanges",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    // ********** GIT RELATED END **********
+    // ********** PROJECT RELATED START **********
+    {
+        "key": "ctrl+c p w",
+        "command": "projectManager.listProjectsNewWindow",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+c p s",
+        "command": "projectManager.saveProject",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+c p p",
+        "command": "workbench.action.switchWindow",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+c p f",
+        "command": "workbench.action.quickOpen",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "f3",
+        "command": "workbench.action.quickOpen",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+c p k",
+        "command": "workbench.action.closeWindow",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.switchWindow"
+    },
+    {
+        "key": "cmd+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+    {
+        "key": "f5",
+        "command": "workbench.action.reloadWindow",
+    },
+    // ********** PROJECT RELATED END **********
+    {
+        "key": "ctrl+x ctrl+q",
+        "command": "workbench.action.files.toggleActiveEditorReadonlyInSession",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+p",
+        "command": "editor.action.wordHighlight.prev",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
+    {
+        "key": "cmd+n",
+        "command": "editor.action.wordHighlight.next",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
+    {
+        "key": "f10",
+        "command": "workbench.action.togglePanel",
+    },
+    // ********** FIX **********
+    {
+        "key": "cmd+v",
+        "command": "execPaste",
+        "when": "!editorTextFocus"
+    },
+    {
+        "key": "cmd+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "cmd+right",
+        "command": "emacs-mcx.forwardWord",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !inlineSuggestionVisible"
+    },
+    {
+        "key": "cmd+right",
+        "command": "-emacs-mcx.forwardWord",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus"
+    },
+    {
+        "key": "cmd+c",
+        "command": "-emacs-mcx.transformToTitlecase",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+v",
+        "command": "-emacs-mcx.scrollDownCommand",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "cmd+v",
+        "command": "-emacs-mcx.isearchExit",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorFocus && findWidgetVisible && !isComposing"
+    },
+]
