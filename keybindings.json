@@ -247,4 +247,8 @@
         "command": "-emacs-mcx.isearchExit",
         "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorFocus && findWidgetVisible && !isComposing"
     },
+    {
+        "key": "cmd+,",
+        "command": "-workbench.action.openSettings"
+    },
 ]

@@ -1,6 +1,5 @@
 {
     "workbench.preferredDarkColorTheme": "Visual Studio Light",
-    "workbench.colorTheme": "Visual Studio Dark",
     "workbench.activityBar.location": "top",
     "workbench.startupEditor": "none",
     "workbench.list.openMode": "singleClick",
@@ -20,6 +19,8 @@
     // "editor.cursorStyle": "block",
     "editor.lineNumbers": "relative",
     "editor.parameterHints.enabled": false,
+    "workbench.colorTheme": "Monokai",
+    "outline.collapseItems": "alwaysCollapse",
     "extensions.ignoreRecommendations": true,
     "explorer.confirmDelete": false,
     "explorer.autoReveal": false,
